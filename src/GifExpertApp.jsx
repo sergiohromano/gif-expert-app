@@ -1,15 +1,15 @@
 import React, {useState} from 'react'
-import { AddCategoria } from './components/AddCategoria'
+import { AddCategory } from './components/AddCategory'
 import { GifGrid } from './components/GifGrid'
 
-const GitExpertApp = () => {
-    const [categories, setCategories] = useState(['frontend'])
+const GifExpertApp = ({ defaultCategories = [] }) => {
+    const [categories, setCategories] = useState(defaultCategories)
 
     return (
         <>
-            <h2>GitExpert</h2>
+            <h2>GifExpert</h2>
             <hr />
-            <AddCategoria setCategories={ setCategories }/>
+            <AddCategory setCategories={ setCategories }/>
             <ol>
                 {categories.map((category) => (
                     <GifGrid key={category} 
@@ -21,4 +21,4 @@ const GitExpertApp = () => {
     );
 }
 
-export default GitExpertApp;
+export default GifExpertApp;

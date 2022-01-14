@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import GitExpertApp from './GitExpertApp';
+import GifExpertApp from './GifExpertApp';
 import './index.css';
 
 ReactDOM.render(
-  <GitExpertApp />,
+  <GifExpertApp />,
   document.getElementById('root')
 );
